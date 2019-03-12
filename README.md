@@ -18,6 +18,8 @@ Renombra los archivos a gremlin.cert y gremlin.key
 
 Crea el secret en tu cluster de k8s
 
+kubectl create secret generic gremlin-team-cert --from-file=./gremlin.cert --from-file=./gremlin.key
+
 kubectl get secrets
 
 ### Instalar gremlin con helm
